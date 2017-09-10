@@ -18,6 +18,16 @@ body {
 a {
   text-decoration: none; }
 
+.text {
+  padding: 2rem;
+  justify-content: center;
+  display: center;
+  text-align: center; }
+  .text h3 {
+    font-family: "Courier New", serif;
+    padding: 0 20%;
+    text-align: left; }
+
 .tabs {
   display: flex;
   flex-direction: column;
@@ -56,5 +66,30 @@ a {
     color: white;
     background: DarkCyan;
     transition: all 0.5s ease; }
+
+.tab-select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  letter-spacing: 0.1rem;
+  transition: all 0.5s ease;
+  font-size: 1rem;
+  color: white;
+  background: DarkCyan; }
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  height: 50px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background: #FFF;
+  z-index: 10; }
+  .footer-container--top {
+    position: fixed;
+    top: 0; }
 
 /*# sourceMappingURL=main.css.map */

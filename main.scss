@@ -1,6 +1,7 @@
 //variables-------------------
 
 $font: "Century Gothic", 'Lato', sans-serif;
+$font2: "Courier New", serif;
 
 
 //mixins----------------------
@@ -38,8 +39,18 @@ a {
 	text-decoration: none;
 }
 
-
-
+.text {
+    padding: 2rem;
+    justify-content: center;
+	display: center;
+	text-align: center;
+	h3 {
+	    font-family: $font2;
+		padding: 0 20%;
+		text-align: left;
+	}
+	
+}
 
 .tabs {
     display: flex;
@@ -82,6 +93,34 @@ a {
 		color: white;
       	background: DarkCyan;
 		transition: all 0.5s ease;
+    }
+}
+
+.tab-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    letter-spacing: 0.1rem;
+	transition: all 0.5s ease;
+	font-size: 1rem;
+    color: white;
+    background: DarkCyan;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    height: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: #FFF;
+    z-index: 10;
+    &--top {
+        position: fixed;
+        top: 0;
     }
 }
 
