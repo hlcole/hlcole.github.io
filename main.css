@@ -6,6 +6,9 @@
     flex-direction: column;
     width: 85%;
     height: 150px; } }
+html {
+  font-size: 20px; }
+
 .logo, img {
   max-width: 100%;
   height: auto;
@@ -13,7 +16,7 @@
   text-align: center; }
 
 body {
-  font-family: "Century Gothic", "Lato", sans-serif; }
+  font-family: "Roboto", "Lato", sans-serif; }
 
 a {
   text-decoration: none; }
@@ -24,9 +27,17 @@ a {
   display: center;
   text-align: center; }
   .text h3 {
-    font-family: "Courier New", serif;
+    font-family: "Roboto", "Lato", sans-serif;
+    font-weight: 100;
     padding: 0 20%;
     text-align: left; }
+    .text h3 a {
+      color: DarkCyan;
+      font-weight: 400;
+      transition: all 0.5s ease; }
+      .text h3 a:hover {
+        color: black;
+        transition: all 0.5s ease; }
 
 .tabs {
   display: flex;
@@ -40,54 +51,101 @@ a {
   padding: 0 2rem; }
 
 .tabs-container {
+  height: 70px; }
+
+.footer-container {
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  display: center; }
+  .footer-container h6 {
+    text-align: center;
+    font-weight: 100; }
+
+.tabs-container, .footer-container {
   display: flex;
   flex-direction: row;
   bottom: 0;
   width: 80%;
-  height: 70px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   background: #FFF;
   z-index: 10; }
-  .tabs-container--top {
+  .tabs-container--top, .footer-container--top {
     position: fixed;
     top: 0; }
 
 .tab {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-  color: #000;
-  letter-spacing: 0.1rem;
-  transition: all 0.5s ease;
-  font-size: 1rem; }
+  color: #000; }
   .tab:hover {
     color: white;
     background: DarkCyan;
     transition: all 0.5s ease; }
 
 .tab-select {
+  color: white;
+  background: DarkCyan; }
+
+.tab, .tab-select {
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 1;
   letter-spacing: 0.1rem;
   transition: all 0.5s ease;
-  font-size: 1rem;
-  color: white;
-  background: DarkCyan; }
+  font-size: 1rem; }
 
-.footer-container {
-  display: flex;
-  flex-direction: row;
-  bottom: 0;
-  width: 80%;
-  height: 50px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  background: #FFF;
-  z-index: 10; }
-  .footer-container--top {
-    position: fixed;
-    top: 0; }
+.icon {
+  justify-content: center;
+  display: center;
+  text-align: center; }
+
+.note {
+  padding: 2rem;
+  justify-content: center;
+  display: center;
+  text-align: center; }
+  .note h3, .note h5 {
+    font-size: 0.7rem;
+    font-family: "Roboto", "Lato", sans-serif;
+    font-weight: 100;
+    padding: 0 20%;
+    text-align: center; }
+  .note h5 {
+    color: LightGray; }
+
+.spacing {
+  padding: 25%; }
+
+.divider {
+  text-align: center;
+  color: LightGray;
+  width: 100px; }
+
+.backgroundcontent-photo, .backgroundcontent-water {
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  font-size: 4rem; }
+  .backgroundcontent-photo a, .backgroundcontent-water a {
+    padding: 10% 20%;
+    color: white;
+    font-size: 3rem;
+    font-weight: 100;
+    display: block;
+    transition: all 0.5s ease; }
+    .backgroundcontent-photo a:hover, .backgroundcontent-water a:hover {
+      color: black;
+      transition: all 0.5s ease;
+      background-color: rgba(1, 1, 1, 0.2); }
+
+.backgroundcontent-photo {
+  background-image: url("./images/photo01.png"); }
+
+.backgroundcontent-water {
+  background-image: url("./images/watercolor01.png"); }
 
 /*# sourceMappingURL=main.css.map */
