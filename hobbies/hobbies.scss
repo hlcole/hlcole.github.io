@@ -162,7 +162,7 @@ a {
 	width: 100px;
 }
 
-.backgroundcontent-photo, .backgroundcontent-water {
+.backgroundcontent-photo, .backgroundcontent-water, .backgroundcontent-graphic {
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
@@ -194,5 +194,6 @@ a {
   background-image: url("./images/watercolor01.png");
 }
 
-
-
+.backgroundcontent-graphic {
+  background-image: url("./images/gdesign01.png");
+}

@@ -121,7 +121,7 @@ a {
   color: LightGray;
   width: 100px; }
 
-.backgroundcontent-photo, .backgroundcontent-water {
+.backgroundcontent-photo, .backgroundcontent-water, .backgroundcontent-graphic {
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
@@ -130,14 +130,14 @@ a {
   color: white;
   text-align: center;
   font-size: 4rem; }
-  .backgroundcontent-photo a, .backgroundcontent-water a {
+  .backgroundcontent-photo a, .backgroundcontent-water a, .backgroundcontent-graphic a {
     padding: 10% 20%;
     color: white;
     font-size: 3rem;
     font-weight: 100;
     display: block;
     transition: all 0.5s ease; }
-    .backgroundcontent-photo a:hover, .backgroundcontent-water a:hover {
+    .backgroundcontent-photo a:hover, .backgroundcontent-water a:hover, .backgroundcontent-graphic a:hover {
       color: black;
       transition: all 0.5s ease;
       background-color: rgba(1, 1, 1, 0.2); }
@@ -148,4 +148,7 @@ a {
 .backgroundcontent-water {
   background-image: url("./images/watercolor01.png"); }
 
-/*# sourceMappingURL=main.css.map */
+.backgroundcontent-graphic {
+  background-image: url("./images/gdesign01.png"); }
+
+/*# sourceMappingURL=hobbies.css.map */
