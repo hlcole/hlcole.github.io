@@ -26,18 +26,34 @@ a {
   justify-content: center;
   display: center;
   text-align: center; }
-  .text h3 {
+  .text h2 {
+    font-family: "Roboto", "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 1.25rem; }
+    .text h2 a {
+      color: DarkCyan;
+      font-weight: 400;
+      transition: all 0.5s ease; }
+      .text h2 a:hover {
+        color: black;
+        transition: all 0.5s ease; }
+  .text h3, .text li {
     font-family: "Roboto", "Lato", sans-serif;
     font-weight: 100;
     padding: 0 20%;
     text-align: left; }
-    .text h3 a {
+    .text h3 a, .text li a {
       color: DarkCyan;
       font-weight: 400;
       transition: all 0.5s ease; }
-      .text h3 a:hover {
+      .text h3 a:hover, .text li a:hover {
         color: black;
         transition: all 0.5s ease; }
+  .text h4 {
+    font-size: 1.15rem;
+    font-family: "Roboto", "Lato", sans-serif;
+    font-weight: 300;
+    text-align: center; }
 
 .tabs {
   display: flex;
@@ -98,6 +114,21 @@ a {
   justify-content: center;
   display: center;
   text-align: center; }
+  .icon table {
+    padding: 0 10%;
+    width: 100%; }
+  .icon #hci_caption, .icon #ios_caption, .icon #cmp_caption, .icon #sou_caption {
+    font-weight: 100;
+    transition: opacity .5s, visibility .5s; }
+  .icon #hci:hover #hci_caption {
+    visibility: visible;
+    color: blue; }
+  .icon #ios:hover #ios_caption {
+    visibility: visible; }
+  .icon #cmp:hover #cmp_caption {
+    visibility: visible; }
+  .icon #sou:hover #sou_caption {
+    visibility: visible; }
 
 .note {
   padding: 2rem;
@@ -121,7 +152,7 @@ a {
   color: LightGray;
   width: 100px; }
 
-.backgroundcontent-photo, .backgroundcontent-water {
+.backgroundcontent-photo, .backgroundcontent-water, .backgroundcontent-graphic {
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
@@ -130,15 +161,15 @@ a {
   color: white;
   text-align: center;
   font-size: 4rem; }
-  .backgroundcontent-photo a, .backgroundcontent-water a {
+  .backgroundcontent-photo a, .backgroundcontent-water a, .backgroundcontent-graphic a {
     padding: 10% 20%;
     color: white;
     font-size: 3rem;
     font-weight: 100;
     display: block;
     transition: all 0.5s ease; }
-    .backgroundcontent-photo a:hover, .backgroundcontent-water a:hover {
-      color: black;
+    .backgroundcontent-photo a:hover, .backgroundcontent-water a:hover, .backgroundcontent-graphic a:hover {
+      color: white;
       transition: all 0.5s ease;
       background-color: rgba(1, 1, 1, 0.2); }
 
@@ -147,5 +178,24 @@ a {
 
 .backgroundcontent-water {
   background-image: url("./images/watercolor01.png"); }
+
+.backgroundcontent-graphic {
+  background-image: url("./images/gdesign01.png"); }
+
+.button {
+  padding: 1rem;
+  font-weight: 100;
+  color: DarkCyan;
+  border: 1px solid DarkCyan;
+  border-radius: 25px;
+  transition: all 0.5s ease; }
+  .button:hover {
+    color: white;
+    background: DarkCyan;
+    transition: all 0.5s ease; }
+
+.recent h3 {
+  padding: 0.5rem;
+  text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
